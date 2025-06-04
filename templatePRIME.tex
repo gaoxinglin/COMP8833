@@ -1,0 +1,445 @@
+\documentclass{article}
+
+\usepackage{setspace}        % Adjust line spacing
+\setstretch{1.5}              % set line spacing to 1.5
+\fontsize{12}{14.4}\selectfont % set font size to 12pt
+\usepackage{PRIMEarxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{lipsum}
+\usepackage{graphicx}
+\graphicspath{{media/}}     % organize your images and other figures under media/ folder
+
+  
+%% Title
+\title{Enhancing Customer Retention for Hapai through Website and CRM Re-development
+}
+
+\author{
+  Supreet Kaur \\
+  Student ID 1594610 \\
+  Unitec \\
+  \texttt{supre02@myunitec.ac.nz} \\
+   \And
+  Xinglin Gao \\
+  Student ID 1592540 \\
+  Unitec \\
+  \texttt{gaox31@myunitec.ac.nz} \\
+}
+
+
+\begin{document}
+\maketitle
+
+
+\begin{abstract}
+\lipsum[1]
+\end{abstract}
+
+
+% keywords can be removed
+\keywords{First keyword \and Second keyword \and More}
+
+
+\section{Introduction}
+\subsection{Overview of Hapai Travel Agency}
+Hapai is a newly established travel agency making its mark in the New Zealand and Australian travel markets. The agency provides a comprehensive suite of travel-related services designed to cater to a diverse range of traveller needs. These services include booking accommodation across various options such as hotels, resorts, and campervans; arranging essential transportation including flights, car rentals, and airport transfers; and organizing enriching sightseeing tours, excursions, and activities. Furthermore, Hapai extends its offerings to include vital travel insurance and other related products, alongside expert advice and guidance on travel destinations, itinerary planning, and budget management. The agency also assists clients with crucial travel-related paperwork, such as visa applications and passport renewals, aiming to provide a seamless and stress-free travel experience.
+
+\subsection{Current Situation}
+Currently, Hapai operates with a digital presence centered around its website, which is integrated with a Salesforce Customer Relationship Management (CRM) system. This integration is intended to manage customer interactions and data, supporting the agency's operational and marketing efforts. The existing infrastructure provides a foundational platform for service delivery and customer engagement.
+
+\subsection{Identified Problem}
+Despite the existing website and Salesforce CRM integration, Hapai has recently identified a significant challenge: the current system is proving insufficient in fostering and maintaining long-term customer retention. In the competitive travel industry, retaining existing customers is crucial for sustainable growth and profitability. The realization is that the existing technological framework, while functional, lacks the advanced capabilities and strategic focus required to effectively nurture customer loyalty and encourage repeat business. This deficiency poses a risk to Hapai's market position and long-term success.
+
+\subsection{Purpose of the Proposal}
+The primary purpose of this proposal is to address the identified shortcomings in Hapai's customer retention strategy. This document will present a comprehensive plan for the re-development of Hapai's website and the strategic enhancement of its Salesforce CRM. The overarching goal is to transform these digital assets into powerful tools that effectively manage customer relationships, increase engagement, and ultimately improve customer retention rates for the agency. This proposal will detail the necessary analyses, evaluations, and technological implementations required to achieve this objective.
+
+\subsection{Scope of the Proposal}
+This proposal will encompass a detailed analysis of customer retention requirements specifically tailored for a travel agency like Hapai. It will involve an evaluation of the current Salesforce CRM's capabilities and limitations concerning sales, marketing, service automation, and security. Furthermore, the proposal will identify key problems within the existing CRM and web services that hinder customer retention and will evaluate suitable existing technologies, including a minimum of two machine learning technologies and one blockchain technology, as potential solutions. The proposal will culminate in outlining the strategic tasks required for the improvement of the current CRM system and the effective integration of new technologies to boost customer retention. The focus will remain on practical and impactful recommendations that align with Hapai's business objectives and the specific needs of its clientele in New Zealand and Australia.
+
+\section{Customer Retention Analysis }
+
+Hapai, as a newly established travel agency, faces the critical challenge of not only acquiring customers but, more importantly, retaining them in a competitive market. Customer retention is paramount for sustainable growth, as retaining existing customers is generally more cost-effective than acquiring new ones. A loyal customer base provides a stable revenue stream, valuable word-of-mouth marketing, and constructive feedback. This analysis will explore the key requirements for customer retention tailored to Hapai's context, drawing on academic research.
+
+\subsection{Building a Relationship with Customers}
+
+Theoretical Background:
+Academic theories underscore the importance of customer relationships for retention, particularly in service industries like travel. Customer Relationship Management (CRM) is a strategic approach focused on developing long-term customer relationships by collecting, managing, and utilizing customer data to enhance the overall customer experience \cite{ledro_artificial_2022}. Its theoretical underpinning, Relationship Marketing (RM), emphasizes building and maintaining long-term value with customers, focusing on retention throughout their lifecycle \cite{petzer_customer_2009}. Furthermore, Customer Satisfaction (the outcome of comparing expectations with perceived performance) and Customer Loyalty (a deep commitment to re-buy or re-patronize) are intrinsically linked to successful relationship building and retention \cite{komalasari_customer_2018}. Theories like Self-Determination Theory (SDT) explain motivations (economy, autonomy, competence, relatedness) in loyalty, while the Theory of Reasoned Action links behavioral changes to subjective norms and attitudes \cite{wang_exploring_nodate}.
+
+Application for Hapai:
+For Hapai, building strong relationships from the outset is crucial. As a new agency, every customer interaction is an opportunity to establish trust and a personal connection.
+
+Personalized Welcome \& Onboarding: Upon a customer's first booking for a New Zealand or Australian tour, Hapai can send a personalized welcome email that goes beyond a simple confirmation. This could include a brief introduction to the Hapai team member handling their booking, a mini-guide to their chosen destination, or an offer for a small add-on service.
+
+Proactive Communication: Throughout the booking and pre-travel process (e.g., for accommodation, flights, tours, visa paperwork), Hapai should provide timely updates and check-ins, making the customer feel valued and informed.
+
+Post-Trip Engagement: After the trip, a follow-up email or call to gather feedback, share photos (if consented), or offer a small "welcome back" discount on future travel insurance or a local excursion can strengthen the bond.
+
+Remembering Preferences: Hapai can utilize its Salesforce CRM to record customer preferences (e.g., window/aisle seat, preferred hotel type, interests like adventure or relaxation) to personalize future recommendations and communications. This demonstrates that Hapai listens and cares, fostering relatedness (SDT).
+
+Importance for Retention:
+Building such relationships fosters customer satisfaction and transitions it into loyalty. When customers feel a genuine connection and believe Hapai understands their needs, they are less likely to switch to competitors for their next trip to New Zealand or Australia. This personalized approach, focusing on long-term value rather than single transactions, aligns with RM principles and can significantly increase customer lifetime value (CLV).
+
+Potential Weaknesses/Challenges:
+
+Resource Intensive: As a new agency, Hapai might have limited staff. Personalized communication for every customer can be time-consuming.
+
+Data Collection \& Utilization: Effective personalization relies on accurate data. Hapai needs to ensure its Salesforce CRM is set up to capture and effectively utilize relevant customer information from the start.
+
+Balancing Automation and Personal Touch: While CRM can automate some communications, ensuring a genuine personal touch is maintained is crucial to avoid messages feeling generic.
+
+\subsection{Offering Incentives}
+
+Theoretical Background:
+Incentives, both monetary and non-monetary, play a role in customer retention, often by enhancing perceived value and satisfaction. Academic research suggests that effective incentives can appeal to economic motivations (e.g., reward points, discounts) and intrinsic motivations like autonomy, competence, and relatedness \cite{wang_exploring_nodate}. Loyalty programs are structured marketing efforts designed to reward purchases and foster allegiance \cite{abooleet_systematic_2023}. The perceived value of an incentive—encompassing economic utility, psychological self-fulfillment, and social interaction—significantly influences its effectiveness \cite{wang_exploring_nodate}. However, solely relying on incentives can have diminishing returns if they don't foster genuine loyalty \cite{abooleet_systematic_2023}.
+
+Application for Hapai:
+Hapai can implement a simple, transparent incentive program:
+
+Welcome Offer: A small discount on a travel-related product (e.g., travel insurance) or a specific excursion for first-time bookers.
+
+Referral Bonus: Offer a discount or voucher for both the existing customer and the new customer they refer for services like campervan bookings or sightseeing tours.
+
+Early Bird Discounts: For popular New Zealand or Australian holiday packages or seasonal tours, offer discounts for booking well in advance.
+
+Milestone Rewards: After a certain number of bookings or a specific spend amount (e.g., for multiple flight and hotel packages), offer a tangible reward, like a complimentary airport transfer or an upgrade on an activity.
+
+Exclusive Content/Access: Non-monetary incentives could include access to exclusive travel guides for NZ/AU destinations or early notification of special deals.
+
+Importance for Retention:
+Well-designed incentives can encourage repeat purchases and make customers feel appreciated. For a new agency like Hapai, they can act as a nudge for customers to choose them again over more established competitors. By offering a mix of monetary and non-monetary incentives, Hapai can appeal to a broader range of customer motivations, enhancing perceived value and satisfaction.
+
+Potential Weaknesses/Challenges:
+
+Cost: Monetary incentives directly impact Hapai's profit margins, which needs careful management.
+
+Perceived Value: The incentives must be perceived as valuable by Hapai’s target customers. A minor discount on a high-value package might not be motivating.
+
+Complexity: Overly complex incentive programs can confuse customers and be difficult for Hapai to administer.
+
+Short-term vs. Long-term Loyalty: Hapai must ensure incentives complement relationship-building efforts rather than becoming the sole reason for repeat business, which might not foster true loyalty \cite{mabzor_customer_2023}.
+
+\subsection{Keeping Customers Engaged}
+
+Theoretical Background:
+Customer engagement, driven by factors like personalization, service quality, trust, and effective CRM practices, is crucial for fostering loyalty \cite{ayub_artificial_2025}. Content marketing (e.g., newsletters, social media) can be effective in keeping travel customers engaged, especially when integrated with CRM and personalized strategies \cite{pookandy_enhancing_nodate}. Post-purchase communication and feedback solicitation also play a vital role by fostering stronger relationships and increasing satisfaction \cite{mabzor_customer_2023}. Digital engagement strategies like personalized recommendations are proving successful for travel brands \cite{karthiyayini2024personalized}.
+
+Application for Hapai:
+Hapai needs to maintain communication and provide value even when customers are not actively booking.
+
+Content Marketing:
+
+Newsletter: A bi-monthly e-newsletter featuring travel tips for New Zealand and Australia, new tour package announcements, customer travel stories (with permission), and special offers.
+
+Blog/Social Media: Regular posts on Hapai’s website blog or social media (e.g., Instagram, Facebook) showcasing stunning NZ/AU destinations, travel advice, information on visa processes, or packing tips for different activities (sightseeing, excursions).
+
+Personalized Communication: Using data from Salesforce CRM, send targeted emails based on past travel interests (e.g., if a customer booked an adventure tour in Queenstown, send them info about new adventure activities or similar destinations).
+
+Interactive Content: Run simple polls or Q\&A sessions on social media related to travel in New Zealand and Australia.
+
+Feedback Solicitation: Actively seek feedback post-trip through surveys and encourage online reviews. Acknowledge and respond to feedback, showing Hapai values customer opinions.
+
+Importance for Retention:
+Consistent engagement keeps Hapai top-of-mind when customers plan their next trip. Providing valuable and relevant content positions Hapai as an expert in New Zealand and Australian travel, building trust and authority. This ongoing dialogue fosters a sense of community and belonging, strengthening the customer relationship and making them more likely to return.
+
+Potential Weaknesses/Challenges:
+
+Content Creation: Consistently creating high-quality, engaging content requires time and resources, which might be a challenge for a new agency.
+
+Information Overload: Customers are bombarded with information. Hapai’s content needs to be genuinely valuable and well-targeted to avoid being ignored.
+
+Measuring ROI: Quantifying the direct impact of engagement activities on retention can be difficult.
+
+Maintaining Consistency: Engagement efforts need to be consistent to be effective. Sporadic newsletters or inactive social media profiles can be detrimental.
+
+\subsection{Addressing Customer Concerns}
+
+Theoretical Background:
+Service recovery literature suggests that effectively addressing customer concerns significantly impacts subsequent loyalty and retention \cite{petzer_customer_2009}. Successful service recovery (correcting service failures to reinstate satisfaction) can even lead to higher satisfaction than initially experienced. Best practices include proactive planning, employee empowerment and training, clear communication, timeliness, and tailored solutions \cite{petzer_customer_2009}. Technology like CRM systems and AI chatbots can play a crucial role in efficiently addressing concerns \cite{ayub_artificial_2025}. The speed and transparency of response are also highly influential \cite{garg_role_2024,prados-castillo_review_2023}.
+
+Application for Hapai:
+Given Hapai offers a range of services from booking accommodation and transport to handling paperwork like visa applications, issues can arise.
+
+Clear Communication Channels: Provide easily accessible contact information (phone, email, possibly a dedicated section on the website) for customer support and concerns.
+
+Timely Acknowledgement and Response: Acknowledge receipt of a concern promptly and provide an estimated timeframe for resolution. Even if an immediate solution isn't possible, keeping the customer informed manages expectations.
+
+Empathetic Approach: Train staff to listen empathetically to customer concerns, validate their feelings, and focus on finding a fair solution.
+
+Transparent Process: Explain the steps Hapai is taking to address the concern. If a mistake was made by Hapai (e.g., incorrect hotel booking, missed detail in itinerary advice), own it and apologize sincerely.
+
+Service Recovery Solutions: Offer appropriate solutions, which could range from an apology and explanation to re-booking, compensation, or a discount on future services. For example, if a flight arranged by Hapai is significantly delayed causing issues, Hapai could assist in re-arrangements or offer a voucher.
+
+Learning from Concerns: Use Salesforce CRM to log concerns and their resolutions. Regularly review these to identify recurring issues and improve processes (e.g., if multiple complaints arise about a specific campervan provider).
+
+Importance for Retention:
+How Hapai handles issues is a critical "moment of truth." Effectively resolving a concern can turn a dissatisfied customer into a loyal advocate. It demonstrates Hapai's commitment to customer satisfaction and builds immense trust. Conversely, poorly handled concerns almost guarantee customer churn and negative word-of-mouth.
+
+Potential Weaknesses/Challenges:
+
+Emotional Labour: Dealing with upset customers can be stressful for Hapai staff.
+
+Cost of Resolution: Compensation or re-bookings can be costly for a new agency.
+
+Setting Precedents: Hapai needs to be consistent in its approach to avoid perceptions of unfairness.
+
+Determining Fair Compensation: It can be challenging to determine what constitutes fair compensation in varied situations.
+
+\subsection{Providing Quality Products or Services}
+
+Theoretical Background:
+Service quality is defined by its connection to customer perceptions and expectations and is measured across dimensions like reliability, assurance, tangibles, empathy, and responsiveness (RATER model) \cite{barusman_customer_2020}. It links directly to customer retention. Consistently delivering high-quality service is fundamental for long-term customer loyalty \cite{petzer_customer_2009}. Academic studies highlight that various service aspects, including accommodation, transport, and advice in a travel package, contribute to overall perceived quality and retention \cite{liljestam_predicting_nodate,viljoen_customer_2016}.
+
+Application for Hapai:
+Hapai’s services (booking accommodation, arranging transport, organising tours, travel insurance, expert advice, handling paperwork) must consistently meet or exceed customer expectations.
+
+Vetted Suppliers: Carefully vet all third-party suppliers (hotels, resorts, campervan companies, airlines, tour operators in NZ/AU) to ensure they meet Hapai's quality standards.
+
+Accurate Information and Advice: Ensure that the expert advice and guidance on travel destinations, itineraries, and budgets are accurate, up-to-date, and tailored to the customer's needs.
+
+Reliable Booking Processes: The process for booking accommodation, flights, car rentals, etc., must be smooth, efficient, and error-free.
+
+Responsive Service: Staff should be knowledgeable and responsive to inquiries about any of Hapai's offerings, from sightseeing tours to visa application assistance.
+
+Tangibles: While Hapai is an agency, the tangible aspects of the services it books (e.g., cleanliness of a hotel, condition of a rental car) reflect on Hapai. Setting clear expectations with customers is important.
+
+Efficient Paperwork Handling: For services like visa applications and passport renewals, efficiency, accuracy, and clear communication about requirements and timelines are paramount.
+
+Importance for Retention:
+The quality of the actual travel experience booked through Hapai is the ultimate determinant of satisfaction. If the hotels are substandard, flights are inconveniently scheduled, or advice given is poor, customers will not return, regardless of how good the relationship-building or incentives are. High-quality, reliable services build trust and a reputation for excellence, directly leading to repeat business and referrals.
+
+Potential Weaknesses/Challenges:
+
+Dependency on Third Parties: Hapai relies on external suppliers for many of its services. A supplier's failure can negatively impact Hapai's reputation.
+
+Maintaining Consistency: Ensuring consistent quality across all bookings and customer interactions requires robust processes and diligent staff.
+
+Subjectivity of Quality: What one customer perceives as high quality, another might not. Managing expectations is key.
+
+Keeping Abreast of Changes: Destinations, supplier quality, and travel regulations in New Zealand and Australia can change. Hapai needs to stay informed to provide accurate advice and quality bookings.
+
+\section{Salesforce CRM Evaluation} 
+
+Based on the customer retention analysis in Part A, Hapai's current Salesforce CRM needs to be evaluated for its ability to support the identified strategies. The owner's sentiment that "Salesforce CRM is not enough to retain their customer retention" suggests potential gaps in its current configuration or utilization for deep retention strategies. Generic CRM features offer foundational support, but nuanced travel sector requirements often necessitate advanced capabilities or specific configurations \cite{commerce_shri_v_r_patel_college_of_commerce_mehsana_impact_2024}.
+
+\subsection{Sales Automation}
+
+General CRM Strengths \& Limitations:
+CRM systems like Salesforce excel at automating sales processes by tracking leads, managing sales pipelines, and automating tasks like follow-up reminders \cite{pookandy_enhancing_nodate,commerce_shri_v_r_patel_college_of_commerce_mehsana_impact_2024}. This improves sales productivity. However, standard CRM functionalities can sometimes be more reactive than proactive and may lack the nuanced personalization needed for deep relationship building if not configured or augmented appropriately \cite{ayub_artificial_2025}.
+
+Evaluation for Hapai:
+
+Alignment with Retention Needs (Part A):
+
+Building Relationships: Salesforce can automate follow-ups after initial bookings or post-trip. It can store customer preferences which, if utilized, aids personalization.
+
+Offering Incentives: Sales automation can trigger personalized incentive offers based on customer purchase history or milestones (e.g., "You've booked 3 trips, here's a special offer!").
+
+Strengths of Salesforce for Hapai:
+
+Lead and Opportunity Management: Can efficiently track inquiries for Hapai’s services (accommodation, flights, tours).
+
+Contact Management: Centralizes customer data, which is foundational for personalized interactions.
+
+Task Automation: Can automate reminders for Hapai staff to make personalized calls or send follow-up emails, aiding relationship building.
+
+Weaknesses/Misalignment for Hapai (Potential reasons for "not enough"):
+
+Limited Proactive Engagement: If Hapai's Salesforce setup is basic, it might lack sophisticated workflow automation to proactively suggest personalized re-engagement campaigns based on complex customer lifecycle triggers (e.g., anniversary of a major trip, or a lull in engagement).
+
+Nuanced Personalization: Standard sales automation might not easily facilitate hyper-personalized follow-ups that consider the type of travel (e.g., family holiday vs. solo adventure) or specific feedback from past trips without significant customization or integration with other tools. Deep retention requires understanding beyond just sales transactions.
+
+Integration for Holistic View: If sales data isn't well-integrated with marketing or service data within Salesforce, the automation might lack the full context needed for genuinely relationship-centric interactions.
+
+\subsection{Marketing Automation}
+
+General CRM Strengths \& Limitations:
+CRM systems with marketing automation capabilities (like Salesforce Marketing Cloud, or integrations) enable targeted campaigns, customer segmentation, and engagement tracking \cite{jacob_customer_nodate}. AI-driven personalization can significantly enhance these efforts. Limitations can arise if the segmentation is not deep enough or if the system struggles to deliver a truly omnichannel experience \cite{ledro_artificial_2022}.
+
+Evaluation for Hapai:
+
+Alignment with Retention Needs (Part A):
+
+Keeping Customers Engaged: Salesforce can manage email lists for newsletters and segment customers for targeted content (e.g., sending New Zealand adventure content to those who previously booked adventure tours).
+
+Offering Personalized Incentives: Can automate the delivery of personalized incentive offers via email or other channels based on customer segments or behaviors.
+
+Strengths of Salesforce for Hapai:
+
+Campaign Management: Even basic Salesforce versions can support email campaigns for Hapai's newsletters or special promotions for NZ/AU travel.
+
+Customer Segmentation: Allows Hapai to group customers based on demographics, past bookings (e.g., preferred destination, type of service like campervan rental vs. luxury hotel), enabling more relevant marketing.
+
+Weaknesses/Misalignment for Hapai (Potential reasons for "not enough"):
+
+Sophistication of Personalization: Hapai might find standard Salesforce marketing automation insufficient for the deep personalization required for retention (e.g., dynamically tailoring content within a newsletter based on individual browsing history on Hapai’s website, or real-time offers based on current interactions). This often requires more advanced Marketing Cloud features or AI integrations.
+
+Content Delivery for Engagement: While Salesforce can send emails, creating and managing diverse, engaging content (blogs, rich social media content) and tracking its impact on retention might require additional tools or more advanced Salesforce modules not currently utilized by Hapai.
+
+Predictive Analytics for Proactive Marketing: If Hapai’s Salesforce lacks predictive analytics, it cannot proactively identify customers who are disengaging or might be interested in a new offer before they explicitly state it, limiting proactive retention marketing.
+
+\subsection{Service Automation}
+
+General CRM Strengths \& Limitations:
+Service automation in CRM (e.g., Salesforce Service Cloud) facilitates efficient customer service through ticketing, case management, knowledge bases, and AI-powered chatbots \cite{ayub_artificial_2025,commerce_shri_v_r_patel_college_of_commerce_mehsana_impact_2024}. This helps in addressing customer concerns promptly. However, over-automation without a human touch can be detrimental, and defining non-contractual churn (common in travel) for proactive service can be challenging for standard systems \cite{ayub_artificial_2025,viljoen_customer_2016}.
+
+Evaluation for Hapai:
+
+Alignment with Retention Needs (Part A):
+
+Addressing Customer Concerns: Salesforce can log customer issues (e.g., with a hotel booking, visa paperwork), track resolution progress, and ensure timely follow-up.
+
+Providing Quality Service: A knowledge base within Salesforce can help Hapai staff quickly find answers to common customer queries about NZ/AU destinations or travel insurance.
+
+Strengths of Salesforce for Hapai:
+
+Case Management: Can effectively track customer complaints or service requests from initiation to resolution, ensuring concerns aren't lost.
+
+Knowledge Base: Hapai can build an internal knowledge base for its staff to ensure consistent and accurate advice on destinations, visa processes, etc.
+
+Omnichannel Support (if configured): Can centralize customer interactions from various channels, providing a unified view when addressing concerns.
+
+Weaknesses/Misalignment for Hapai (Potential reasons for "not enough"):
+
+Proactive Problem Resolution: Standard service automation is often reactive. Hapai might lack tools within its current Salesforce to proactively identify potential service issues (e.g., a customer whose flight schedule changes, impacting their connecting tour) and address them before the customer complains.
+
+Personalized Service Recovery: While cases can be logged, automating genuinely personalized service recovery actions (beyond standard responses) based on customer value or history might be limited in a basic setup.
+
+Feedback Integration for Service Improvement: If customer feedback collected (e.g., post-trip surveys) isn't seamlessly integrated and analyzed within Salesforce to trigger service improvements or personalized follow-ups, a key retention loop is missed.
+
+\subsection{Privacy and Security}
+
+General CRM Strengths \& Limitations:
+CRM systems like Salesforce prioritize data security and compliance with regulations like GDPR, offering features like encryption and access controls \cite{jacob_customer_nodate}. This is crucial for building trust. Challenges can include the complexity of ensuring compliance across all integrations and the potential for misuse of data if internal controls are weak \cite{ayub_artificial_2025}.
+
+Evaluation for Hapai:
+
+Alignment with Retention Needs (Part A):
+
+Building Relationships: Strong privacy and security are foundational to building customer trust, which is essential for long-term relationships. Customers entrusting Hapai with personal data for bookings and visa applications need assurance it's protected.
+
+Addressing Customer Concerns: Securely handling data related to customer concerns is vital.
+
+Strengths of Salesforce for Hapai:
+
+Robust Security Features: Salesforce generally offers strong data encryption, user authentication (MFA), and granular access controls, helping Hapai protect sensitive customer information related to travel plans, passport details, and payments.
+
+Compliance Support: Salesforce provides tools and adheres to standards that can help Hapai meet data protection regulations in New Zealand, Australia, and for international customers.
+
+Weaknesses/Misalignment for Hapai (Potential reasons for "not enough"):
+
+Configuration and Best Practices: While Salesforce provides the tools, Hapai needs to ensure its specific instance is configured correctly according to security best practices. Misconfiguration can lead to vulnerabilities despite the platform's inherent strengths.
+
+User Training and Awareness: The security of customer data also depends on Hapai’s staff adhering to privacy policies and secure data handling practices. The CRM itself cannot prevent human error or intentional misuse if internal training and controls are lacking.
+
+Transparency with Customers: While Salesforce secures data, Hapai must also be transparent with customers about how their data is being used for personalization and retention efforts to maintain trust. This aspect of data ethics goes beyond technical security features.
+
+This evaluation suggests that while Hapai's Salesforce CRM provides a solid foundation, its current setup or utilization might be too generic, lacking the advanced personalization, proactive engagement, and sophisticated analytical capabilities needed to fully support the deep customer retention strategies outlined in Part A for the competitive travel sector.
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Headings: second level}
+\lipsum[5]
+\begin{equation}
+\xi _{ij}(t)=P(x_{t}=i,x_{t+1}=j|y,v,w;\theta)= {\frac {\alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}{\sum _{i=1}^{N} \sum _{j=1}^{N} \alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}}
+\end{equation}
+
+\subsubsection{Headings: third level}
+\lipsum[6]
+
+\paragraph{Paragraph}
+\lipsum[7]
+
+\section{Examples of citations, figures, tables, references}
+\label{sec:others}
+\lipsum[8]
+
+The documentation for \verb+natbib+ may be found at
+\begin{center}
+  \url{http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf}
+\end{center}
+Of note is the command \verb+\citet+, which produces citations
+appropriate for use in inline text.  For example,
+\begin{verbatim}
+   \citet{hasselmo} investigated\dots
+\end{verbatim}
+produces
+\begin{quote}
+  Hasselmo, et al.\ (1995) investigated\dots
+\end{quote}
+
+\begin{center}
+  \url{https://www.ctan.org/pkg/booktabs}
+\end{center}
+
+
+\subsection{Figures}
+\lipsum[10] 
+See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
+\lipsum[11] 
+
+\begin{figure}
+  \centering
+  \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+  \caption{Sample figure caption.}
+  \label{fig:fig1}
+\end{figure}
+
+\subsection{Tables}
+\lipsum[12]
+See awesome Table~\ref{tab:table}.
+
+\begin{table}
+ \caption{Sample table title}
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \multicolumn{2}{c}{Part}                   \\
+    \cmidrule(r){1-2}
+    Name     & Description     & Size ($\mu$m) \\
+    \midrule
+    Dendrite & Input terminal  & $\sim$100     \\
+    Axon     & Output terminal & $\sim$10      \\
+    Soma     & Cell body       & up to $10^6$  \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:table}
+\end{table}
+
+\subsection{Lists}
+\begin{itemize}
+\item Lorem ipsum dolor sit amet
+\item consectetur adipiscing elit. 
+\item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
+\end{itemize}
+
+
+\section{Conclusion}
+Your conclusion here
+
+\section*{Acknowledgments}
+This was was supported in part by......
+
+%Bibliography
+\bibliographystyle{unsrt}  
+\bibliography{references}  
+
+
+\end{document}
