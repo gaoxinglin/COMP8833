@@ -5,10 +5,9 @@ Cristina Ledro, Anna Nosella, and Andrea Vinelli.
 \newblock Artificial intelligence in customer relationship management: literature review and future research directions.
 \newblock {\em Journal of Business \& Industrial Marketing}, 37(13):48--63, December 2022.
 
-\bibitem{petzer_customer_2009}
+\bibitem{petzer_customer_nodate}
 D~J Petzer, T~F~J Steyn, and P~G Mostert.
 \newblock Customer retention practices of small, medium and large hotels {In} {South} {Africa}: {An} exploratory study.
-\newblock 2009.
 
 \bibitem{komalasari_customer_2018}
 Fiona~Poetri Komalasari and Surya~Fajar Budiman.
@@ -38,10 +37,9 @@ Syed~Shafiq Ayub, Mokhtarrudin Ahmad, Norhidayah~Mad Halid, Rus~Sumariyanti Suri
 Jaseem Pookandy.
 \newblock {ENHANCING} {CUSTOMER} {RELATIONSHIP} {MANAGEMENT} {WITH} {SALESFORCE}: {A} {COMPREHENSIVE} {REVIEW}.
 
-\bibitem{karthiyayini2024personalized}
-J~Karthiyayini and RJ~Anandhi.
-\newblock Personalized travel recommendations system using hybrid filtering and deep learning.
-\newblock 2024.
+\bibitem{karthiyayini_personalized_nodate}
+J~Karthiyayini and R~J Anandhi.
+\newblock Personalized {Travel} {Recommendations} {System} {Using} {Hybrid} {Filtering} and {Deep} {Learning}.
 
 \bibitem{garg_role_2024}
 Deepti Garg.
@@ -75,5 +73,49 @@ Kim Viljoen and M.~Roberts-Lombard.
 \bibitem{jacob_customer_nodate}
 Benila~Susan Jacob.
 \newblock {CUSTOMER} {RELATIONSHIP} {MANAGEMENT} {IN} {TOURISM} – {A} {LITERATURE} {REVIEW}.
+
+\bibitem{lambillotte_enhancing_2022}
+Laetitia Lambillotte, Nathan Magrofuoco, Ingrid Poncin, and Jean Vanderdonckt.
+\newblock Enhancing playful customer experience with personalization.
+\newblock {\em Journal of Retailing and Consumer Services}, 68:103017, September 2022.
+
+\bibitem{song_research_2020}
+Bo~Song, Yue Gao, and Xiao-Mei Li.
+\newblock Research on {Collaborative} {Filtering} {Recommendation} {Algorithm} {Based} on {Mahout} and {User} {Model}.
+\newblock {\em Journal of Physics: Conference Series}, 1437(1):012095, January 2020.
+
+\bibitem{shad_natural_2024}
+Ralph Shad, Kaledio Potter, and Abram Gracias.
+\newblock Natural {Language} {Processing} ({NLP}) for {Sentiment} {Analysis}: {A} {Comparative} {Study} of {Machine} {Learning} {Algorithms}, October 2024.
+
+\bibitem{tripathi_comprehensive_2023}
+Gautami Tripathi, Mohd~Abdul Ahad, and Gabriella Casalino.
+\newblock A comprehensive review of blockchain technology: {Underlying} principles and historical background with future challenges.
+\newblock {\em Decision Analytics Journal}, 9:100344, December 2023.
+
+\bibitem{cuayahuitl_ensemble-based_2019}
+Heriberto Cuayáhuitl, Donghyeon Lee, Seonghan Ryu, Yongjin Cho, Sungja Choi, Satish Indurthi, Seunghak Yu, Hyungtak Choi, Inchul Hwang, and Jihie Kim.
+\newblock Ensemble-based deep reinforcement learning for chatbots.
+\newblock {\em Neurocomputing}, 366:118--130, November 2019.
+
+\bibitem{liu_retracted_2025}
+Lijuan Liu, Yanping Wang, and Wanle Chi.
+\newblock Retracted: {Image} {Recognition} {Technology} {Based} on {Machine} {Learning}.
+\newblock {\em IEEE Access}, pages 1--1, 2025.
+
+\bibitem{taherdoost_smart_2023}
+Hamed Taherdoost.
+\newblock Smart {Contracts} in {Blockchain} {Technology}: {A} {Critical} {Review}.
+\newblock {\em Information}, 14(2):117, February 2023.
+
+\bibitem{boozary_enhancing_2025}
+Payam Boozary, Sogand Sheykhan, Hamed GhorbanTanhaei, and Cosimo Magazzino.
+\newblock Enhancing customer retention with machine learning: {A} comparative analysis of ensemble models for accurate churn prediction.
+\newblock {\em International Journal of Information Management Data Insights}, 5(1):100331, June 2025.
+
+\bibitem{chinekwu_somtochukwu_odionu_big_2024}
+{Chinekwu Somtochukwu Odionu}, {Bernadette Bristol-Alagbariya}, and {Richard Okon}.
+\newblock Big data analytics for customer relationship management: {Enhancing} engagement and retention strategies.
+\newblock {\em International Journal of Scholarly Research in Science and Technology}, 5(2):050--067, December 2024.
 
 \end{thebibliography}

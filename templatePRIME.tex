@@ -17,6 +17,7 @@
 \usepackage{graphicx}
 \graphicspath{{media/}}     % organize your images and other figures under media/ folder
 
+
   
 %% Title
 \title{Enhancing Customer Retention for Hapai through Website and CRM Re-development
@@ -35,18 +36,29 @@
 }
 
 
+%-------------------------------------------
+% Paper Body
+%-------------------------------------------
+
 \begin{document}
 \maketitle
 
 
 \begin{abstract}
-\lipsum[1]
+This proposal outlines a plan to enhance customer retention for Hapai, a new travel agency operating in New Zealand and Australia, through the re-development of its website and the strategic enhancement of its Salesforce Customer Relationship Management (CRM) system. Hapai currently utilizes a website integrated with Salesforce CRM for managing customer interactions and data, but this setup has proven insufficient for fostering long-term customer retention in the competitive travel industry. The proposal identifies key problems within the existing CRM and web services, such as a lack of personalized customer interaction and recommendations , inadequate automation in customer support and feedback loops , and limited insight into customer churn and retention trends. To address these issues, the document proposes incorporating advanced technologies, including machine learning (e.g., collaborative filtering algorithms, Natural Language Processing for sentiment analysis, AI-powered chatbots, voice and image recognition, churn prediction models, and Customer Lifetime Value prediction using neural networks) and blockchain technology (e.g., decentralized identity frameworks, smart contracts, and immutable travel history ledgers). The overarching goal is to transform Hapai's digital assets into powerful tools for effective customer relationship management, increased engagement, and improved retention rates, ultimately strengthening Hapai's market position and long-term success.
 \end{abstract}
 
 
 % keywords can be removed
-\keywords{First keyword \and Second keyword \and More}
+\keywords{Customer Retention \and Hapai \and Website Re-development \and CRM Enhancement \and Salesforce \and Machine Learning \and Blockchain \and Travel Agency \and Personalization \and Customer Engagement \and Churn Prediction }
 
+
+\newpage
+% --- Page Content (Table of Contents) ---
+\phantomsection % Helps hyperref create correct links to the ToC
+\pdfbookmark{\contentsname}{toc} % Add a bookmark for the ToC in the PDF
+\tableofcontents % <<<--- ADD TABLE OF CONTENTS HERE
+\newpage
 
 \section{Introduction}
 \subsection{Overview of Hapai Travel Agency}
@@ -71,7 +83,7 @@ Hapai, as a newly established travel agency, faces the critical challenge of not
 \subsection{Building a Relationship with Customers}
 
 Theoretical Background:
-Academic theories underscore the importance of customer relationships for retention, particularly in service industries like travel. Customer Relationship Management (CRM) is a strategic approach focused on developing long-term customer relationships by collecting, managing, and utilizing customer data to enhance the overall customer experience \cite{ledro_artificial_2022}. Its theoretical underpinning, Relationship Marketing (RM), emphasizes building and maintaining long-term value with customers, focusing on retention throughout their lifecycle \cite{petzer_customer_2009}. Furthermore, Customer Satisfaction (the outcome of comparing expectations with perceived performance) and Customer Loyalty (a deep commitment to re-buy or re-patronize) are intrinsically linked to successful relationship building and retention \cite{komalasari_customer_2018}. Theories like Self-Determination Theory (SDT) explain motivations (economy, autonomy, competence, relatedness) in loyalty, while the Theory of Reasoned Action links behavioral changes to subjective norms and attitudes \cite{wang_exploring_nodate}.
+Academic theories underscore the importance of customer relationships for retention, particularly in service industries like travel. Customer Relationship Management (CRM) is a strategic approach focused on developing long-term customer relationships by collecting, managing, and utilizing customer data to enhance the overall customer experience \cite{ledro_artificial_2022}. Its theoretical underpinning, Relationship Marketing (RM), emphasizes building and maintaining long-term value with customers, focusing on retention throughout their lifecycle \cite{petzer_customer_nodate}. Furthermore, Customer Satisfaction (the outcome of comparing expectations with perceived performance) and Customer Loyalty (a deep commitment to re-buy or re-patronize) are intrinsically linked to successful relationship building and retention \cite{komalasari_customer_2018}. Theories like Self-Determination Theory (SDT) explain motivations (economy, autonomy, competence, relatedness) in loyalty, while the Theory of Reasoned Action links behavioral changes to subjective norms and attitudes \cite{wang_exploring_nodate}.
 
 Application for Hapai:
 For Hapai, building strong relationships from the outset is crucial. As a new agency, every customer interaction is an opportunity to establish trust and a personal connection.
@@ -129,7 +141,7 @@ Short-term vs. Long-term Loyalty: Hapai must ensure incentives complement relati
 \subsection{Keeping Customers Engaged}
 
 Theoretical Background:
-Customer engagement, driven by factors like personalization, service quality, trust, and effective CRM practices, is crucial for fostering loyalty \cite{ayub_artificial_2025}. Content marketing (e.g., newsletters, social media) can be effective in keeping travel customers engaged, especially when integrated with CRM and personalized strategies \cite{pookandy_enhancing_nodate}. Post-purchase communication and feedback solicitation also play a vital role by fostering stronger relationships and increasing satisfaction \cite{mabzor_customer_2023}. Digital engagement strategies like personalized recommendations are proving successful for travel brands \cite{karthiyayini2024personalized}.
+Customer engagement, driven by factors like personalization, service quality, trust, and effective CRM practices, is crucial for fostering loyalty \cite{ayub_artificial_2025}. Content marketing (e.g., newsletters, social media) can be effective in keeping travel customers engaged, especially when integrated with CRM and personalized strategies \cite{pookandy_enhancing_nodate}. Post-purchase communication and feedback solicitation also play a vital role by fostering stronger relationships and increasing satisfaction \cite{mabzor_customer_2023}. Digital engagement strategies like personalized recommendations are proving successful for travel brands \cite{karthiyayini_personalized_nodate}.
 
 Application for Hapai:
 Hapai needs to maintain communication and provide value even when customers are not actively booking.
@@ -162,7 +174,7 @@ Maintaining Consistency: Engagement efforts need to be consistent to be effectiv
 \subsection{Addressing Customer Concerns}
 
 Theoretical Background:
-Service recovery literature suggests that effectively addressing customer concerns significantly impacts subsequent loyalty and retention \cite{petzer_customer_2009}. Successful service recovery (correcting service failures to reinstate satisfaction) can even lead to higher satisfaction than initially experienced. Best practices include proactive planning, employee empowerment and training, clear communication, timeliness, and tailored solutions \cite{petzer_customer_2009}. Technology like CRM systems and AI chatbots can play a crucial role in efficiently addressing concerns \cite{ayub_artificial_2025}. The speed and transparency of response are also highly influential \cite{garg_role_2024,prados-castillo_review_2023}.
+Service recovery literature suggests that effectively addressing customer concerns significantly impacts subsequent loyalty and retention \cite{petzer_customer_nodate}. Successful service recovery (correcting service failures to reinstate satisfaction) can even lead to higher satisfaction than initially experienced. Best practices include proactive planning, employee empowerment and training, clear communication, timeliness, and tailored solutions \cite{petzer_customer_nodate}. Technology like CRM systems and AI chatbots can play a crucial role in efficiently addressing concerns \cite{ayub_artificial_2025}. The speed and transparency of response are also highly influential \cite{garg_role_2024,prados-castillo_review_2023}.
 
 Application for Hapai:
 Given Hapai offers a range of services from booking accommodation and transport to handling paperwork like visa applications, issues can arise.
@@ -195,7 +207,7 @@ Determining Fair Compensation: It can be challenging to determine what constitut
 \subsection{Providing Quality Products or Services}
 
 Theoretical Background:
-Service quality is defined by its connection to customer perceptions and expectations and is measured across dimensions like reliability, assurance, tangibles, empathy, and responsiveness (RATER model) \cite{barusman_customer_2020}. It links directly to customer retention. Consistently delivering high-quality service is fundamental for long-term customer loyalty \cite{petzer_customer_2009}. Academic studies highlight that various service aspects, including accommodation, transport, and advice in a travel package, contribute to overall perceived quality and retention \cite{liljestam_predicting_nodate,viljoen_customer_2016}.
+Service quality is defined by its connection to customer perceptions and expectations and is measured across dimensions like reliability, assurance, tangibles, empathy, and responsiveness (RATER model) \cite{barusman_customer_2020}. It links directly to customer retention. Consistently delivering high-quality service is fundamental for long-term customer loyalty \cite{petzer_customer_nodate}. Academic studies highlight that various service aspects, including accommodation, transport, and advice in a travel package, contribute to overall perceived quality and retention \cite{liljestam_predicting_nodate,viljoen_customer_2016}.
 
 Application for Hapai:
 Hapai’s services (booking accommodation, arranging transport, organising tours, travel insurance, expert advice, handling paperwork) must consistently meet or exceed customer expectations.
@@ -344,98 +356,108 @@ Transparency with Customers: While Salesforce secures data, Hapai must also be t
 This evaluation suggests that while Hapai's Salesforce CRM provides a solid foundation, its current setup or utilization might be too generic, lacking the advanced personalization, proactive engagement, and sophisticated analytical capabilities needed to fully support the deep customer retention strategies outlined in Part A for the competitive travel sector.
 
 
+\section{Existing Technologies Evaluation}
 
+Salesforce CRM has been robust and widely adopted, but does not addressing dynamic and unique needs of the customer retention for the traveling agencies such as Hapai. According to evaluations of part A, and part B, the three critical problems have been identified in salesforce CRM, and will hinder effective customer engagement and retention. The major purpose of this section is to present each of the problems, evaluate, and propose appropriate innovative solutions considering the contemporary technologies like machine learning and blockchain to extend features and functionalities of CRM. 
 
+\textbf{Problem 1: Lack of personalized customer interaction and the recommendations}
 
+Salesforce CRM provides a basic customer data management and segmentation but it lacks of ability to deliver a highly personalized recommendations and tailored experiences, which have been essential for travel industry, in which the customer satisfaction linked to the personalization. Hapai’s customers expect appropriate recommendations \cite{lambillotte_enhancing_2022} according to their preferences, past behaviors, travel history, and budget, as traditional CRM does not have abilities to handle effective without any type of advanced data intelligence. 
 
+Proposed Solutions:
 
+\textbf{Technology 1 using machine learning: Collaborative filtering algorithms}
 
+One of the technologies, which can be implemented is the collaborative filtering algorithm with the use of machine learning. It helps to make automatic predictions of end user’s interests and collects the preferences from the different users. The implementation can be done by adding and integrating collaborative filtering engine into salesforce using tools like Amazon personalize, and or Azure personalizer, as Hapai used to develop appropriate travel recommendation systems, which personalization different suggestions for destinations, accommodation types, and the activities or excursions \cite{song_research_2020}. This particular recommendation engine will feed for end user interfaces, and marketing emails, which develop dynamic user experience, and tailors to individual interests. 
 
+The following are some of the major recommendation’s advantages and disadvantages to use in the machine learning for the proposed system:
 
+Advantages:
+One of the major advantages is that it will be increasing more engagement, and aids appropriate conversion via relevancy. Further, the automatic adaptations could be enabled over time, and can new data for conversions. Alongside this, it can be used to automatically adapts for over time and new data inserted. 
 
+Disadvantages:
+With the proposed system, it will require sufficient amount of end user interactions, so that the problem could be sorted out. Additionally, it lacks for context-awareness, and might impacts on the seasonal recommendations. 
 
+\textbf{Machine Learning Technology 2: Natural language processing for Sentiment analysis}
 
-\subsection{Headings: second level}
-\lipsum[5]
-\begin{equation}
-\xi _{ij}(t)=P(x_{t}=i,x_{t+1}=j|y,v,w;\theta)= {\frac {\alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}{\sum _{i=1}^{N} \sum _{j=1}^{N} \alpha _{i}(t)a^{w_t}_{ij}\beta _{j}(t+1)b^{v_{t+1}}_{j}(y_{t+1})}}
-\end{equation}
+NLP based sentiment analysis can be used to process customer reviews, emails, and support chats to identify satisfaction levels, pain points and the trending concerns. It can be implemented using an NLP based sentiment engine, and consider salesforce service cloud, which allows a real-time analysis of customer feedback. Further, this sentiment data can be integrated into CRM and flags at-risk customers and triggered automatic interventions like priority support or discounts. 
 
-\subsubsection{Headings: third level}
-\lipsum[6]
+One of the major advantages of implementing sentiment analysis is to that it will be automating entire qualitative analysis of the large feedback datasets \cite{shad_natural_2024}. Further, it defines for proactively identifying retention risks, and able to inform about the product/service improvements. The major disadvantage is that it develops language ambiguity, which have been affecting accuracy in the solutions, and require appropriate robust data preprocessing to obtain a better result.
 
-\paragraph{Paragraph}
-\lipsum[7]
+\textbf{Blockchain Technology 1: Decentralized identity for customer trust, and loyalty}
 
-\section{Examples of citations, figures, tables, references}
-\label{sec:others}
-\lipsum[8]
+In blockchain technology, the deployment of decentralized identity frameworks could be done that provide appropriate controls for personal data, and improves transparency and security in identity verifications and loyalty programs. There can be use of numerous platforms like Sovrin, Hapai will be able to offer customers a secure, blockchain based identity, which stores their loyalty points, travel preferences, and authentication credentials. This identity can be integrated seamlessly with Salesforce experience cloud to secure, personalized login and tracking. The major advantage with this integration is the enhanced data privacy and transparency, which further aids trust in data, and develops appropriate loyalty points \cite{tripathi_comprehensive_2023}, which must be managed. A dependency on the systems could be reduced, and develops centralized databases, and further it limits out breach risks. The other disadvantage is that it will require significant initial set up and customer onboarding, and further integrates with existing CRM infrastructure, which might be more complex. 
 
-The documentation for \verb+natbib+ may be found at
-\begin{center}
-  \url{http://mirrors.ctan.org/macros/latex/contrib/natbib/natnotes.pdf}
-\end{center}
-Of note is the command \verb+\citet+, which produces citations
-appropriate for use in inline text.  For example,
-\begin{verbatim}
-   \citet{hasselmo} investigated\dots
-\end{verbatim}
-produces
-\begin{quote}
-  Hasselmo, et al.\ (1995) investigated\dots
-\end{quote}
+\textbf{Problem 2: Inadequate automation in customer support and feedback loops}
 
-\begin{center}
-  \url{https://www.ctan.org/pkg/booktabs}
-\end{center}
+In this, the target problem is response time, which enabled during high-demand travel seasons or the customer needs. Further, Salesforce will also include different types of service automation modules, and feedback integrations, and will need to manage customer needs. 
 
+Proposed solutions for this problem are:
 
-\subsection{Figures}
-\lipsum[10] 
-See Figure \ref{fig:fig1}. Here is how you add footnotes. \footnote{Sample of the first footnote.}
-\lipsum[11] 
+\textbf{Machine Learning technology 1: AI-powered chatbots with deep reinforcement learning}
 
-\begin{figure}
-  \centering
-  \fbox{\rule[-.5cm]{4cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-  \caption{Sample figure caption.}
-  \label{fig:fig1}
-\end{figure}
+In order to handle customer enquiries effectively, artificial intelligence chatbots using deep reinforcement learning will be continuously learning from user interactions, and developing appropriate conversations and able to improve accuracy, and engagement. Further, the different chatbot platforms like Rasa, DialogFlow etc. could be used, and allows bot to handle dynamic, multi-turn dialogues for travel services \cite{cuayahuitl_ensemble-based_2019}. It defines to link CRM with salesforce service cloud APIs, and allows effective interactions. The major disadvantages include is that there will be need of extensive data for training. Additionally, it has higher initial configuration costs, and ongoing fine-tuning for operations. 
 
-\subsection{Tables}
-\lipsum[12]
-See awesome Table~\ref{tab:table}.
+\textbf{Machine learning technology 2: Voice and Image recognition for Smart support}
 
-\begin{table}
- \caption{Sample table title}
-  \centering
-  \begin{tabular}{lll}
-    \toprule
-    \multicolumn{2}{c}{Part}                   \\
-    \cmidrule(r){1-2}
-    Name     & Description     & Size ($\mu$m) \\
-    \midrule
-    Dendrite & Input terminal  & $\sim$100     \\
-    Axon     & Output terminal & $\sim$10      \\
-    Soma     & Cell body       & up to $10^6$  \\
-    \bottomrule
-  \end{tabular}
-  \label{tab:table}
-\end{table}
+The implementation of voice and image recognition can be done and it enables smart support tools, which allow customers to interact more naturally, or submit visual documentations to initiate faster processing. The major example include is that the customers are able to upload passport images or speaking about the concerns. Further, machine learning platforms like Amazon Rekognition and Google speech to text, Hapai can be able to speed up identity verifications, document review, and complaint handling for integrated services with salesforce \cite{liu_retracted_2025}. 
 
-\subsection{Lists}
-\begin{itemize}
-\item Lorem ipsum dolor sit amet
-\item consectetur adipiscing elit. 
-\item Aliquam dignissim blandit est, in dictum tortor gravida eget. In ac rutrum magna.
-\end{itemize}
+The major advantage is that it will b easing support processes within the customers for low digital literacy, and able to reduce manual review time. Further, it can be used to enhance current accessibility for the impaired users. The disadvantages for this solution include is that there has been higher risk of false positives/ negatives. Further, it might be raising more privacy concerns around biometric data. 
+
+Blockchain Technology 2: Smart Contracts for Feedback and Dispute Resolution
+The deployment of smart contracts could be done, which is based on blockchain and able to execute operations dynamically with numerous conditions, which are met. Additionally, it is used to handle all automated refunds, and survey incentives. The implementation of Ethereum can be done by Hapai to have smart contracts, and trigger up operations based on Salesforce CRM data. If refund is issued and it delayed, a complaint could be verified. With smart contracts, some automations can be brought up and issues more loyalty, and tokens generated completed when feedback is obtained \cite{taherdoost_smart_2023}. 
+
+Advantage of this smart contract is that it is transparent and tamper-proof resolutions, and used to improve trust, and customer satisfactions. Further, it can be used to reduce administrative overhead, but will require more careful conditions, and setting up irreversible execution once the contract is deployed. 
+
+\textbf{Problem 3: Limited insight into customer churn and retention trends} 
+
+Salesforce CRM lacks native predictive churn models, which are specific to travel sector. It limits ability to Hapai, and proactively used to identify customers that may stop considering the service or have been unsatisfied. A manual data segmentation does not offer appropriate foresight, but required for early interventions. For this, the proposed solutions based on the technologies include churn predictions using random forest, and decision trees \cite{boozary_enhancing_2025}. 
+
+\textbf{Machine learning technology 1: Churn prediction models using decision trees, and random forest}
+
+A decision tree and random forest algorithms could be used for supervising machine learning models and classifying customer churn according to historical data. A salesforce CRM customer data feeding into churn prediction pipeline, and Hapai used to identify at risk customers, and able to take timely actions to offer discounts or personalized contact. The major advantage include is the higher accuracy, and obtained for the interpretable results, and helps further to prioritize retention efforts. Further, it can be used to customize travel specific variables. Further, they require a need clean, and labelled data for operations, and might overfit for noisy data, and does not require any tuning [25]. 
+
+\textbf{Machine Learning Technology 2: Customer Lifetime Value (CLV) Prediction Using Neural Networks}
+
+CLV prediction could be used to estimate total revenue of a customer, which is expected to be generated, and for this, the neural networks are effectively used in the modeling like nonlinear relationships. Hapai can be able to train neural network model and for this, TensorFlow or data from Salesforce CRM could be used, and predicts customers with higher lifetime value. According to output, Salesforce can be ablet to assign appropriate resources, and marketing budgets.
+
+The major advantage includes information sharing for long-term strategic planning, and enabling tiered service levels with the rewards to end users. Further, it develops a complex architecture and tuning required, which is also harder to explain about outputs for non-technical stakeholders. 
+
+\textbf{Blockchain Technology 3: Immutable Travel History Ledger for Customer Analytics}
+
+Blockchain based immutable ledgers could be used and allowing for travel data to securely recorded, and analyzed for retention modeling. Blockchain platforms like IBM blockchain or Corda, Hapai used to maintain a decentralized log for all customer interactions, and will ensure accurate data for churn and retention analysis. This particular ledger further links with salesforce analytics cloud for initiating appropriate processing \cite{chinekwu_somtochukwu_odionu_big_2024}. 
+
+The advantage include is that it helps to prevent data tampering, and will further ensure reliability of historical data, which is used to provide appropriate machine learning training. Additionally, it is considered for building up trust for privacy-conscious users. The disadvantage also includes that blockchain based ledger storage is quite expensive, and will require more integration middleware.
 
 
 \section{Conclusion}
-Your conclusion here
+This proposal has thoroughly analyzed the critical need for Hapai, a new travel agency, to enhance its customer retention strategies in the competitive New Zealand and Australian travel markets. The evaluation of Hapai's current website and Salesforce CRM system revealed significant shortcomings in fostering and maintaining long-term customer loyalty, primarily due to a lack of advanced capabilities for personalized engagement, proactive support, and insightful retention analytics.
 
-\section*{Acknowledgments}
-This was was supported in part by......
+
+To address these identified problems, this document has presented a comprehensive plan focusing on strategic re-development and enhancement. Key areas of focus included:
+
+Building Relationships: Emphasizing personalized welcome, proactive communication, post-trip engagement, and remembering customer preferences to foster trust and connection from the outset.
+
+
+Offering Incentives: Proposing a mix of monetary and non-monetary incentives such as welcome offers, referral bonuses, early bird discounts, and milestone rewards to encourage repeat business and enhance perceived value.
+Keeping Customers Engaged: Advocating for consistent content marketing through newsletters, blogs, social media, personalized communication, interactive content, and active feedback solicitation to maintain top-of-mind awareness and position Hapai as a travel expert.
+Addressing Customer Concerns: Highlighting the importance of clear communication channels, timely and empathetic responses, transparent processes, effective service recovery solutions, and learning from past issues to build trust and loyalty.
+
+
+Providing Quality Products or Services: Stressing the fundamental role of vetting suppliers, providing accurate information, ensuring reliable booking processes, and efficient paperwork handling to consistently meet or exceed customer expectations.
+
+The evaluation of the existing Salesforce CRM revealed that while it provides a foundational platform, its generic configuration limits its ability to support the nuanced and proactive strategies required for deep customer retention in the travel sector. To overcome these limitations, the proposal put forth innovative solutions leveraging contemporary technologies:
+
+For personalized interaction and recommendations: Collaborative filtering algorithms  and Natural Language Processing for sentiment analysis  were proposed to deliver highly tailored experiences and proactively identify customer sentiment.
+
+For customer support and feedback loops: AI-powered chatbots with deep reinforcement learning  and voice/image recognition for smart support  were suggested to automate and enhance customer service efficiency.
+
+For insights into churn and retention trends: Churn prediction models using decision trees and random forests , and Customer Lifetime Value (CLV) prediction using neural networks  were recommended to enable proactive interventions and strategic resource allocation.
+
+For enhanced trust and data security: Decentralized identity frameworks  and smart contracts  utilizing blockchain technology were proposed to improve transparency, secure loyalty programs, and automate certain processes. Additionally, an immutable travel history ledger based on blockchain was suggested for reliable customer analytics.
+
+
+By implementing these strategic enhancements and integrating cutting-edge technologies, Hapai can transform its digital infrastructure into a powerful engine for customer retention. This will not only improve customer satisfaction and loyalty but also ensure sustainable growth and a stronger market position for Hapai in the highly competitive travel industry. The focus remains on practical and impactful recommendations that align with Hapai's business objectives and the specific needs of its clientele in New Zealand and Australia.
 
 %Bibliography
 \bibliographystyle{unsrt}  
